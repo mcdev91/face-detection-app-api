@@ -26,5 +26,6 @@
   },
   "engines": {
     "node": "12.14.1"
-  }
+  },
+  "heroku-run-build-script": true
 }
