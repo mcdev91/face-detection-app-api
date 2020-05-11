@@ -22,9 +22,9 @@ db.select('*').from('users').then(data => {
 
 const app = express();
 
-app.use(bodyParser.json());
 app.use(cors());
-db
+app.use(bodyParser.json());
+
 app.get('/', (req, res) => { res.send('It is working') })
 app.post('/signin', signin.handleSignIn(db, bcrypt))
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) })
