@@ -15,7 +15,6 @@ const db = knex({
         connectionString: process.env.DATABASE_URL,
         ssl: true,
     }
-    .catch(res => status(400).json('unable to work with API'))
 });
 
 db.select('*').from('users').then(data => {
