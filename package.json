@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "ng build"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
